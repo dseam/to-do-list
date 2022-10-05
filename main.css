@@ -1,0 +1,138 @@
+* {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     border: 0;
+}
+
+ ul, ol, li {
+      list-style: none;
+      display: flex;
+}
+
+html, body {
+     line-height: 1;
+}
+
+@font-face {
+    font-family: 'JosefinSans-VariableFont_wght';
+    src:url('fonts/JosefinSans-VariableFont_wght.ttf');
+}
+
+body {
+     width: 100%;
+     height: 100vh;
+     background-image: linear-gradient(45deg, #64d6f2 25%, rgba(16,16, 29, 0.95) 100%);
+     font-family: 'JosefinSans-VariableFont_wght';
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.to-do-container {
+     background-color: #10101d;
+     width: 100%;
+     max-width: 500px;
+     max-height: 100%;
+     padding: 16px;
+     overflow: auto;
+     border-radius: 10px;
+}
+
+.to-do-header {
+     color: #f6f4f4;
+     font-size: 20px;
+     font-weight: 700;
+}
+
+.to-do-header:nth-child(3) {
+     font-size: 16px;
+     color: #64d6f2;
+}
+
+.add-task {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+input[type=text] {
+     border: none;
+     outline: none;
+     background-color: #2E4057;
+}
+
+input[type=checkbox] {
+     margin-left: 5px;
+}
+
+.task-input {
+     width: 100%;
+     min-height: 36px;
+     margin: 6px 0;
+     padding: 0 5px;
+     border-radius: 4px;
+     color: #f6f4f4;
+}
+
+.task-list {
+     display: flex;
+     flex-direction: column;
+}
+
+.task-list-item {
+     display: flex;
+     align-items: center;
+     width: 100%;
+     background-color: #7FBCD2;
+     border-radius: 4px;
+     margin-top: 10px;
+     min-height: 30px;
+}
+
+.li-done {
+     opacity: .75;
+     background-color: #41D3BD;
+     text-decoration: line-through;
+}
+
+.span-input {
+     padding: 0 8px;
+}
+
+.task-list-item-label {
+     max-width: calc(100% - 2px);
+     word-wrap: break-word;
+}
+
+.task-list-item-label input {
+     border: none;
+}
+
+.add-task-button {
+     color: #10101d;
+     background-color: #00D7FF;
+     min-width: 35px;
+     min-height: 35px;
+     border-radius: 4px;
+     margin-left: 15px;
+     font-size: 22px;
+}
+
+.delete-button {
+     display: block;
+     margin-left: auto;
+     min-width: 16px;
+     min-height: 16px;
+     background-image: url("https://img.icons8.com/color/96/FFFFFF/delete-forever.png");
+     background-size: 20px;
+     background-position: center;
+     cursor: pointer;
+     margin-right: 4px;
+}
+.total {
+     color: #64d6f2;
+     font-weight: 600;
+     font-size: 18px;
+     padding-top: 16px;
+}
